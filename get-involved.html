@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Get Involved — Harbor &amp; Hope | Brittany Nation</title>
+<meta name="description" content="Donate and volunteer page UI for Harbor & Hope Community Kitchen, a fictional nonprofit: gift amounts tied to real outcomes, volunteer roles, and a simple sign-up form mock.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Get Involved — Harbor & Hope Community Kitchen | Brittany Nation">
+<meta property="og:description" content="Nonprofit donate/volunteer page UI — amounts tied to outcomes, clear volunteer roles, honest form design. Forest, ochre & warm sand.">
+<meta property="og:url" content="https://brittanynation.github.io/nonprofit-community-site/get-involved.html">
+<meta property="og:image" content="https://brittanynation.github.io/nonprofit-community-site/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://brittanynation.github.io/nonprofit-community-site/og-image.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar"><div class="wrap"><div class="brand">BRITTANY NATION <span>• DESIGN</span></div><nav class="nav" aria-label="Project"><a href="index.html">Home</a><a href="programs.html">Programs &amp; Impact</a><a href="get-involved.html" aria-current="page">Get Involved</a><a href="https://github.com/BrittanyNation/nonprofit-community-site">GitHub Repo</a></nav></div></header>
+<main id="main"><div class="wrap">
+  <section class="hero">
+    <p class="eyebrow">Get Involved</p>
+    <h1>Give money, time, <em>or groceries.</em></h1>
+    <p class="lede">Three ways in, each explained before it is asked for. Amounts are tied to what they actually cover, volunteer roles say the hours out loud, and the form asks only for what a first shift needs.</p>
+  </section>
+
+  <div class="layout">
+    <section class="panel" aria-label="Donate">
+      <h2>Make a gift (design mock — no real donation)</h2>
+      <p class="hint">One gift amount is pre-selected to show the selected state. Each amount names its outcome, so a donor chooses a result, not just a number.</p>
+      <div class="amounts" role="group" aria-label="Gift amount">
+        <div class="amount">$25<small>Covers a weekend bag for 5 kids</small></div>
+        <div class="amount selected">$50<small>Stocks the pantry produce table for a morning</small></div>
+        <div class="amount">$120<small>Covers one full community meal service</small></div>
+      </div>
+      <div class="row2">
+        <div class="field"><label for="freq">Frequency</label><select id="freq"><option>Monthly — most helpful</option><option>One-time gift</option></select></div>
+        <div class="field"><label for="name">Full name</label><input id="name" type="text" autocomplete="name" placeholder="Sample Name"></div>
+      </div>
+      <div class="field"><label for="email">Email for your receipt</label><input id="email" type="email" autocomplete="email" placeholder="you@example.org"><p class="hint">Receipts and one monthly impact note. No fundraising calls, ever — stated here, before the button, not after.</p></div>
+      <a class="btn btn-ochre" href="get-involved.html" aria-disabled="true">Give $50 monthly (mock)</a>
+      <p class="hint" style="margin-top:12px">This is a portfolio concept for a fictional nonprofit. The button is inert and takes no payment.</p>
+    </section>
+
+    <aside class="panel" aria-label="Volunteer roles">
+      <h3>Volunteer roles</h3>
+      <p><strong>Pantry host</strong><br><span class="hint">Tue / Thu / Sat mornings · 3-hour shift · Greets neighbors, restocks shelves.</span></p>
+      <p><strong>Meal crew</strong><br><span class="hint">Wed / Fri · 4–8 PM · Cooks, serves, and eats with the room.</span></p>
+      <p><strong>Bag packer</strong><br><span class="hint">Thursdays · 1 hour · Packs kids weekend bags — the easiest first shift.</span></p>
+      <p><strong>Driver</strong><br><span class="hint">Weekday mornings · Own car · Picks up donated produce from two partner stores.</span></p>
+      <div class="notice"><strong>First step:</strong> one orientation, one shadow shift — then you pick your regular slot. No long-term commitment is asked for up front.</div>
+    </aside>
+  </div>
+
+  <section class="panel" aria-label="Volunteer sign-up" style="margin-bottom:32px">
+    <h2>Volunteer sign-up (form UI mock)</h2>
+    <div class="row2">
+      <div class="field"><label for="vname">Full name</label><input id="vname" type="text" autocomplete="name" placeholder="Sample Name"></div>
+      <div class="field"><label for="vemail">Email</label><input id="vemail" type="email" autocomplete="email" placeholder="you@example.org"></div>
+    </div>
+    <div class="row2">
+      <div class="field"><label for="role">Role you would like to try first</label><select id="role"><option>Bag packer — 1 hour, Thursdays</option><option>Pantry host</option><option>Meal crew</option><option>Driver</option><option>Not sure yet — help me choose</option></select></div>
+      <div class="field"><label for="note">Anything we should know? <span class="hint">(optional)</span></label><input id="note" type="text" placeholder="e.g. Available Saturday mornings"></div>
+    </div>
+    <a class="btn btn-primary" href="get-involved.html" aria-disabled="true">Send sign-up (mock)</a>
+    <p class="hint" style="margin-top:12px">Form is a design mock for this fictional nonprofit — nothing is submitted or stored.</p>
+  </section>
+</div></main>
+<footer><div class="wrap">Original portfolio concept by Brittany Nation. Harbor &amp; Hope Community Kitchen is a fictional nonprofit; all programs, figures, and stories are sample content, and no real donations are taken. Design workflow: Sketch &amp; Webflow — this demo is hand-built in HTML/CSS.</div></footer>
+</body>
+</html>
