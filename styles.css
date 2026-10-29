@@ -76,3 +76,10 @@ th{color:var(--forest)}
 .swatch span{flex:1;min-width:140px;border-radius:12px;padding:14px;font-weight:800;font-size:.9rem}
 .notice{background:#FDF6DC;border:1px solid #E9CF8A;border-radius:12px;padding:14px 16px}
 footer{padding:28px 0 40px;color:var(--muted);font-size:.92rem}
+
+/* --- Working-form additions (palette colors only) --- */
+.amount{cursor:pointer}
+.error{display:none;color:var(--forest);font-weight:700;font-size:.9rem;margin:.3rem 0 0}
+.error.show{display:block}
+input.invalid{border-color:var(--forest);outline:2px solid var(--ochre)}
+.success-note{background:var(--sand);border:2px solid var(--ochre);border-radius:12px;padding:1.25rem;margin-top:1rem}
