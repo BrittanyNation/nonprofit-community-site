@@ -27,21 +27,22 @@
   </section>
 
   <div class="layout">
-    <section class="panel" aria-label="Donate">
+    <section class="panel" id="donate-panel" aria-label="Donate">
       <h2>Make a gift (design mock — no real donation)</h2>
       <p class="hint">One gift amount is pre-selected to show the selected state. Each amount names its outcome, so a donor chooses a result, not just a number.</p>
-      <div class="amounts" role="group" aria-label="Gift amount">
-        <div class="amount">$25<small>Covers a weekend bag for 5 kids</small></div>
-        <div class="amount selected">$50<small>Stocks the pantry produce table for a morning</small></div>
-        <div class="amount">$120<small>Covers one full community meal service</small></div>
+      <div class="amounts give-controls" role="group" aria-label="Gift amount">
+        <div class="amount" data-amount="25" role="button" tabindex="0" aria-pressed="false">$25<small>Covers a weekend bag for 5 kids</small></div>
+        <div class="amount selected" data-amount="50" role="button" tabindex="0" aria-pressed="true">$50<small>Stocks the pantry produce table for a morning</small></div>
+        <div class="amount" data-amount="120" role="button" tabindex="0" aria-pressed="false">$120<small>Covers one full community meal service</small></div>
       </div>
       <div class="row2">
         <div class="field"><label for="freq">Frequency</label><select id="freq"><option>Monthly — most helpful</option><option>One-time gift</option></select></div>
-        <div class="field"><label for="name">Full name</label><input id="name" type="text" autocomplete="name" placeholder="Sample Name"></div>
+        <div class="field"><label for="name">Full name</label><input id="name" type="text" autocomplete="name" placeholder="Sample Name"><p class="error" id="err-dname">Please enter your full name.</p></div>
       </div>
-      <div class="field"><label for="email">Email for your receipt</label><input id="email" type="email" autocomplete="email" placeholder="you@example.org"><p class="hint">Receipts and one monthly impact note. No fundraising calls, ever — stated here, before the button, not after.</p></div>
-      <a class="btn btn-ochre" href="get-involved.html" aria-disabled="true">Give $50 monthly (mock)</a>
-      <p class="hint" style="margin-top:12px">This is a portfolio concept for a fictional nonprofit. The button is inert and takes no payment.</p>
+      <div class="field"><label for="email">Email for your receipt</label><input id="email" type="email" autocomplete="email" placeholder="you@example.org"><p class="error" id="err-demail">Please enter a valid email address.</p><p class="hint">Receipts and one monthly impact note. No fundraising calls, ever — stated here, before the button, not after.</p></div>
+      <button class="btn btn-ochre give-controls" type="button" id="give-btn" style="border:0;cursor:pointer">Give $50 monthly (demo)</button>
+      <p class="hint give-controls" style="margin-top:12px">This is a portfolio concept for a fictional nonprofit. The form works end to end as a demo, but no real donation is taken and no payment is processed.</p>
+      <div id="give-success" class="success-note" hidden><h3 style="margin-top:0">Gift recorded (demo)</h3><p id="give-success-text"></p></div>
     </section>
 
     <aside class="panel" aria-label="Volunteer roles">
@@ -55,19 +56,23 @@
   </div>
 
   <section class="panel" aria-label="Volunteer sign-up" style="margin-bottom:32px">
-    <h2>Volunteer sign-up (form UI mock)</h2>
+    <h2>Volunteer sign-up</h2>
+    <form id="volunteer-form" novalidate>
     <div class="row2">
-      <div class="field"><label for="vname">Full name</label><input id="vname" type="text" autocomplete="name" placeholder="Sample Name"></div>
-      <div class="field"><label for="vemail">Email</label><input id="vemail" type="email" autocomplete="email" placeholder="you@example.org"></div>
+      <div class="field"><label for="vname">Full name</label><input id="vname" type="text" autocomplete="name" placeholder="Sample Name"><p class="error" id="err-vname">Please enter your full name.</p></div>
+      <div class="field"><label for="vemail">Email</label><input id="vemail" type="email" autocomplete="email" placeholder="you@example.org"><p class="error" id="err-vemail">Please enter a valid email address.</p></div>
     </div>
     <div class="row2">
       <div class="field"><label for="role">Role you would like to try first</label><select id="role"><option>Bag packer — 1 hour, Thursdays</option><option>Pantry host</option><option>Meal crew</option><option>Driver</option><option>Not sure yet — help me choose</option></select></div>
       <div class="field"><label for="note">Anything we should know? <span class="hint">(optional)</span></label><input id="note" type="text" placeholder="e.g. Available Saturday mornings"></div>
     </div>
-    <a class="btn btn-primary" href="get-involved.html" aria-disabled="true">Send sign-up (mock)</a>
-    <p class="hint" style="margin-top:12px">Form is a design mock for this fictional nonprofit — nothing is submitted or stored.</p>
+    <button class="btn btn-primary" type="submit" id="volunteer-btn" style="border:0;cursor:pointer">Send sign-up</button>
+    <p class="hint" style="margin-top:12px">Demo form for this fictional nonprofit — the sign-up completes on this page, and nothing leaves your browser or is stored on a server.</p>
+    </form>
+    <div id="volunteer-success" class="success-note" hidden><h3 style="margin-top:0">Sign-up received (demo)</h3><p id="volunteer-success-text"></p></div>
   </section>
 </div></main>
 <footer><div class="wrap">Original portfolio concept by Brittany Nation. Harbor &amp; Hope Community Kitchen is a fictional nonprofit; all programs, figures, and stories are sample content, and no real donations are taken. Design workflow: Sketch &amp; Webflow — this demo is hand-built in HTML/CSS.</div></footer>
+<script src="involved.js"></script>
 </body>
 </html>
