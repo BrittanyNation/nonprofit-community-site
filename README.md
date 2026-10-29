@@ -17,7 +17,7 @@ Built to support applications for **UI Designer**, **Front-End Designer**, **Web
 - **Honest form design** — mock donate and volunteer forms that say what an email will be used for before submission, mark optional fields, and state plainly that no real donation or submission happens
 - **Accessibility-minded choices** — contrast-safe pairings, badges and selected states that use words and borders, never color alone, skip link, `aria-current` navigation, a real `<table>` for the weekly schedule, and real labels on every field
 - **Responsive layout** — stat and card grids step down cleanly on small screens, and the schedule table remains readable on phones
-- **Semantic, framework-free build** — hand-written HTML/CSS, one stylesheet, no JavaScript required, no external images; all visuals are CSS-only
+- **Semantic, framework-free build** — hand-written HTML/CSS, one stylesheet, vanilla JavaScript powers the forms, no external images; all visuals are CSS-only
 
 ## Palette
 
@@ -52,3 +52,7 @@ My design workflow runs in **Sketch and Webflow**, where I design interfaces and
 ## Note
 
 This is an original portfolio concept created by Brittany Nation. Harbor & Hope Community Kitchen is a fictional nonprofit; this project is not affiliated with any real organization. All names, programs, figures, and stories shown are sample data, and the site takes no real donations.
+
+## Working forms
+
+`involved.js` makes this page's forms real: the gift-amount chips select an amount, the Give button label follows the amount and frequency, and both the donate and volunteer forms validate and end in a thank-you state. Front-end demo only — no donation is taken and nothing is sent to a server.
